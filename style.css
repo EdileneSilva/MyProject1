@@ -1,0 +1,36 @@
+body {
+  background-color: black;
+}
+div {
+  font-family: "Jaldi", sans-serif;
+  font-size: 18px;
+}
+i {
+  color: white;
+  font-size: 23px;
+  position: relative;
+  left: 20px;
+}
+hr {
+  height: 1px;
+  background-color: rgb(96, 104, 122, 0.6);
+  border: none;
+}
+.form-control {
+  margin-left: 15px;
+}
+.current-city {
+  font-size: 26px;
+  text-align: center;
+  font-weight: bold;
+  line-height: 1.2;
+}
+.fa-city {
+  padding: 0px 5px;
+}
+.fa-tint {
+  color: #138496;
+}
+.Hum-Fri {
+  text-align: center;
+}
