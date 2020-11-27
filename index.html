@@ -18,11 +18,15 @@
         <div class="card text-white bg-dark" style="width: 400px;">
             <div class="card-box">
                 <div class="row" style="padding-top: 15px;">
-                    <div class="current-city col-4">Current city</div>
-                    <i class="fas fa-sun col-1"></i>
-                    <div class="day col-3" id="currentDay"> Sunday 10°C</div>
-                    <i class="fas fa-tint col-1"></i>
-                    <div class="humidity col-3">Humidity 30%</div>
+                    <div class="current-city col-4">Current city
+                    </div>
+                    <div id="currentTemperature">T °C</div>
+                    <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="" id="currIcon" class="fa-sun" width="50">
+                    <div class="day col-2" id="currentDay"> Last Update </div>
+                        <div class="humidity col-3" id="currentHum">
+                            Humidity
+                        <div id="windSpeed"> Wind Speed</div>
+                    </div>
                 </div>
                 <br />
                 <form class="form-inline">
@@ -30,54 +34,16 @@
                     <input type="text" class="form-control" placeholder="Enter the city here" id="cityId"
                         style="width: 210px;">
                     <input type="button" value="Find a city" class="btn btn-info">
-                    <a href="#" id=currCityLink><i class="fas fa-city"></i></a>
+                <a href="#" id=currCityLink><i class="fas fa-city"></i></a>
 
                 </form>
                 <br />
-                <div class="row">
-                    <i class="fas fa-cloud-rain col-1"></i>
-                    <div class="monday col-5">Monday </div>
-                    <i class="fas fa-tint col-1"></i>
-                    <div class="humidity col-4">Humidity</div>
-                    <div class="temp-Mon col-5 ml-auto">12-18°C</div>
-                    <div class="Hum-Mon col-5 mr-auto">60%</div>
+                <div class="row" id="forecast"></div>
+                
+                
                 </div>
-                <hr />
-                <div class="row">
-                    <i class="fas fa-cloud-sun col-1"></i>
-                    <div class="tuesday col-5">Tuesday</div>
-                    <i class="fas fa-tint col-1"></i>
-                    <div class="humidity col-4">Humidity</div>
-                    <div class="temp-Tue col-5 ml-auto">11-20°C</div>
-                    <div class="Hum-Tue col-5 mr-auto">40%</div>
-                </div>
-                <hr />
-                <div class="row">
-                    <i class="fas fa-cloud-showers-heavy col-1"></i>
-                    <div class="Wednesday col-5">Wednesday</div>
-                    <i class="fas fa-tint col-1"></i>
-                    <div class="humidity col-4">Humidity</div>
-                    <div class="temp-Wed col-5 ml-auto">9-14°C</div>
-                    <div class="Hum-wed col-5 mr-auto">80%</div>
-                </div>
-                <hr />
-                <div class="row">
-                    <i class="fas fa-cloud-sun-rain col-1"></i>
-                    <div class="Thursday col-5">Thursday </div>
-                    <i class="fas fa-tint col-1"></i>
-                    <div class="humidity col-4">Humidity</div>
-                    <div class="temp-Thu col-5 ml-auto">15-24°C</div>
-                    <div class="Hum-Thu col-5 mr-auto">55%</div>
-                </div>
-                <hr />
-                <div class="row" style="padding-bottom: 15px;">
-                    <i class="fas fa-cloud col-1"></i>
-                    <div class="Friday col-5">Friday</div>
-                    <i class="fas fa-tint col-1"></i>
-                    <div class="humidity col-4">Humidity</div>
-                    <div class="temp-Fri col-5 ml-auto">10-19°C</div>
-                    <div class="Hum-Fri col-3 ml-auto">45%</div>
-                    <div class="changeT col-2">
+            
+                    <div class="changeT">
                         <a href="#" id="tempCelsius">°C</a> |
                         <a href="#" id="tempFahrenheit">°F</a>
                     </div>
