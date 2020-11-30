@@ -15,15 +15,13 @@ hr {
   height: 1px;
   background-color: rgb(96, 104, 122, 0.6);
   border: none;
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
 }
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-hr {
-  margin-bottom: 0 !important;
-  margin-top: 0 !important;
 }
 img {
   margin: 0;
@@ -46,27 +44,6 @@ img {
 .fa-city {
   padding: 0px 5px;
 }
-
-#currentDay,
-#currentHum {
-  font-size: 17px;
-  text-align: left;
-  padding: 0px;
-  margin: 0;
-}
-
-#windSpeed {
-  font-size: 16px;
-}
-#currentTemperature {
-  font-size: 26px;
-  font-weight: bold;
-}
-#currIcon {
-  position: relative;
-  top: 30px;
-  right: 50px;
-}
 .col {
   padding: 0;
 }
@@ -88,4 +65,24 @@ img {
 .source {
   text-align: right;
   margin-left: 130px;
+}
+#currentDay,
+#currentHum {
+  font-size: 17px;
+  text-align: left;
+  padding: 0px;
+  margin: 0;
+}
+
+#windSpeed {
+  font-size: 16px;
+}
+#currentTemperature {
+  font-size: 26px;
+  font-weight: bold;
+}
+#currIcon {
+  position: relative;
+  top: 30px;
+  right: 50px;
 }
